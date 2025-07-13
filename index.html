@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pure Water Project</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    .sidebar {
+      height: 100%;
+      width: 250px;
+      position: fixed;
+      top: 0;
+      left: -250px;
+      background-color: #0077cc;
+      padding-top: 60px;
+      transition: 0.3s;
+      z-index: 1000;
+    }
+
+    .sidebar a {
+      padding: 10px 20px;
+      text-decoration: none;
+      font-size: 18px;
+      color: white;
+      display: block;
+    }
+
+    .sidebar a:hover {
+      background-color: #005fa3;
+    }
+
+    .openbtn {
+      font-size: 20px;
+      cursor: pointer;
+      background-color: #0077cc;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      z-index: 1100;
+    }
+
+    .main {
+      padding: 20px;
+    }
+
+    .content-section {
+      display: none;
+      max-width: 800px;
+      margin: 80px auto;
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .content-section.active {
+      display: block;
+    }
+
+    #home .overlay {
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button[type="submit"] {
+      background-color: #0077cc;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+    }
+
+    h2 {
+      color: #0077cc;
+    }
+  </style>
+</head>
+<body>
+  <!-- Menu Button -->
+  <button class="openbtn" onclick="openNav()">☰ Menu</button>
+
+  <!-- Sidebar Menu -->
+  <div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" onclick="closeNav()">🔙Close</a>
+    <a href="#" onclick="showContent('home')">Home</a>
+    <a href="#" onclick="showContent('about')">About Us</a>
+    <a href="#" onclick="showContent('intro')">Introduction</a>
+    <a href="#" onclick="showContent('challenges')">Identified Challenges</a>
+    <a href="#" onclick="showContent('solutions')">Proposed Solutions</a>
+    <a href="#" onclick="showContent('week')">Week-wise Activities</a>
+    <a href="#" onclick="showContent('gallery')">Survey Gallery</a>
+    <a href="#" onclick="showContent('contact')">Contact & Support</a>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main" id="mainContent">
+
+    <!-- Home -->
+    <div id="home" class="content-section active">
+      <div class="overlay">
+        <img src="https://uploads.onecompiler.io/43qf3dvf7/43qeyskuu/pexels-pixabay-40784.jpg" width="300" height="200" class "card_img1">
+        <h2>Awareness on Pure Drinking Water</h2>
+        <p>💧 Welcome to our CSP website!</p>
+        <p>This project aims to spread awareness about the importance of pure and safe drinking water. Unsafe water causes diseases like typhoid, diarrhea, and cholera. We conducted fieldwork, created posters, and educated people on how to ensure water safety in daily life.</p>
+        <p><strong>Let’s join hands to promote safe water for all!</strong></p>
+      </div>
+    </div>
+
+    <!-- About Us -->
+    <div id="about" class="content-section">
+      <h2>About Us</h2>
+      <p><strong>Project Guide:</strong><br><br>We are sincerely grateful to our project guide, Ms.V.Pavithra, Assistant Professor, Department of CSE, Geethanjali Instistute of Science and Technology, for guiding us and supporting our efforts in spreading awareness on pure drinking water.</p>
+      <p><strong>Team Members:</strong><br>▪ P. Pravallika <br>▪ P. Varshitha <br>▪ P. Venkata Roshitha<br>▪ R. Ujwala</p>
+      <p><strong>Project Location:</strong><br>The project was carried out in and around Padmanabha sathram(v), kodavaluru(m), Nellore district,Andhra Pradesh.</p>
+      <iframe src="https://www.google.com/maps?q=Padmanabha+Sathram,+Andhra+Pradesh&output=embed" width="100%" height="300" style="border:0;"></iframe>
+    </div>
+
+    <!-- Introduction -->
+    <div id="intro" class="content-section">
+      <h2>Introduction</h2>
+      <p>Access to clean and safe drinking water is a fundamental human right. Empowering communities with potable water enhances health, boosts the economy, and creates long-term sustainability. Let's protect this precious resource together!</p>
+    </div>
+
+    <!-- Identified Challenges -->
+    <div id="challenges" class="content-section">
+      <h2>Identified Challenges</h2>
+      <ul>
+        <li>1️⃣ <strong>Unsafe Water Sources:</strong> Reliance on untreated water like wells, ponds, borewells.</li>
+        <li>2️⃣ <strong>Lack of Awareness:</strong> Many unaware of boiling or filtering.</li>
+        <li>3️⃣ <strong>Poor Storage Practices:</strong> Open containers, dirty pots, contamination.</li>
+        <li>4️⃣ <strong>Water-Borne Diseases:</strong> Diarrhea, Typhoid, Cholera, Jaundice.</li>
+        <li>5️⃣ <strong>Irregular Supply:</strong> Forces storage in unsafe ways.</li>
+        <li>6️⃣ <strong>No NGO or Govt. Support:</strong> No education drives in rural areas.</li>
+        <li>7️⃣ <strong>Financial Constraints:</strong> No filters due to cost, rely on unsafe methods.</li>
+      </ul>
+    </div>
+
+    <!-- Proposed Solutions -->
+    <div id="solutions" class="content-section">
+      <h2>Proposed Solutions</h2>
+      <ul>
+        <li>✅ Boiling water (kills germs)</li>
+        <li>✅ Use of cloth, ceramic, candle filters</li>
+        <li>✅ Safe storage (closed & clean containers)</li>
+        <li>✅ Use of chlorine tablets (with care)</li>
+        <li>✅ Handwashing before touching water</li>
+        <li>✅ Awareness via posters and talks</li>
+        <li>✅ Involve local elders for awareness</li>
+      </ul>
+    </div>
+
+    <!-- Week-wise Activities -->
+    <div id="week" class="content-section">
+      <h2>Week-wise Activities</h2>
+      <p><strong>Week 1:</strong> Door-to-door survey and problem identification</p>
+      <p><strong>Week 2:</strong> Water quality tested using pH paper strips</p>
+      <p><strong>Week 3:</strong> Purification awareness and training</p>
+      <p><strong>Week 4:</strong> Awareness camp with posters and demos</p>
+      <p><strong>Week 5:</strong> Presentation drive in school/community</p>
+      <p><strong>Week 6:</strong> Pamphlet distribution in homes</p>
+    </div>
+
+    <!-- Survey Gallery -->
+    <div id="gallery" class="content-section">
+      <h2>Survey Gallery</h2>
+      <p>Image placeholders:</p>
+      <p>Week 1: <img src="week1_img1.jpg" alt="Week 1 Img" width="100%" /></p>
+      <p>Week 2: <img src="week2_img1.jpg" alt="Week 2 Img" width="100%" /></p>
+      <p>Week 3: <img src="week3_img1.jpg" alt="Week 3 Img" width="100%" /></p>
+    </div>
+
+    <!-- Contact & Support -->
+    <div id="contact" class="content-section">
+      <h2>Contact & Support</h2>
+      <p>Please share your feedback or contact us using the form below:</p>
+      <form action="https://formsubmit.co/your-email@example.com" method="POST">
+        <label for="name">👤 Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">📧 Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">✉️ Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+    </div>
+
+  </div>
+
+  <!-- JavaScript -->
+  <script>
+    function openNav() {
+      document.getElementById("mySidebar").style.left = "0";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidebar").style.left = "-250px";
+    }
+
+    function showContent(sectionId) {
+      document.querySelectorAll('.content-section').forEach(el => el.classList.remove('active'));
+      document.getElementById(sectionId).classList.add('active');
+      closeNav();
+    }
+  </script>
+
+</body>
+</html>
